@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  b Body:
+  = @todo.body
+p
+  b Isdone:
+  = @todo.isDone
+
+= link_to 'Edit', edit_todo_path(@todo)
+'|
+= link_to 'Back', todos_path
